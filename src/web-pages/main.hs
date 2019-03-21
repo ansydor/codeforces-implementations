@@ -15,4 +15,4 @@ main :: IO ()
 main = do
   [size, position, shift] <- fmap (map read . words) getLine
   let result = scale size position shift
-  print result
+  putStrLn result
